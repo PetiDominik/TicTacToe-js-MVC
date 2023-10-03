@@ -1,0 +1,37 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin : 0;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+#playGround {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5px;
+}
+
+.field {
+    flex: 0 0 30%;
+    aspect-ratio: 1 / 1;
+    background-color: #eee;
+    font-size: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
