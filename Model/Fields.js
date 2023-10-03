@@ -39,7 +39,7 @@ class Fields {
 
         if (winner == "X") {
             alert("Játékos 1. nyert!");
-        } else if (winnder == "O") {
+        } else if (winner == "O") {
             alert("Játékos 2. nyert!");
         }
     }
@@ -60,13 +60,11 @@ class Fields {
 
             txt += field;
             txt += index % 3 == 2 ? "@" : "";
-            
         }
-
-        if (txt.indexOf("OOO") > 0) {
-            return "O"
-        } else if (txt.indexOf("XXX") > 0) {
-            return "X"
+        if (txt.indexOf("OOO") >= 0) {
+            return "O";
+        } else if (txt.indexOf("XXX") >= 0) {
+            return "X";
         }
         return "";
     }
