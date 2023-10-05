@@ -32,15 +32,16 @@ class Fields {
     }
 
     #checkWinner() {
-        if (this.#isTie()) {
-            alert("Döntetlen!");
-        }
         const winner = this.#otherCheck();
 
         if (winner == "X") {
             alert("Játékos 1. nyert!");
         } else if (winner == "O") {
             alert("Játékos 2. nyert!");
+        }
+
+        if (this.#isTie()) {
+            alert("Döntetlen!");
         }
     }
 
